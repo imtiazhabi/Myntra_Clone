@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    color: #282c3f;
+}
+header{
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #dddfe3;
+    
+
+}
+.myntra_home{
+    height: 45px;
+}
+.logo_container{
+    margin-left: 4%;
+}
+.action_bar{
+    margin-right: 4% ;
+}
+.nav_bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+.nav_bar a {
+font-size: 14px;
+letter-spacing: .3px;
+color: #282c3f;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+padding: 27px 10px;
+border-bottom: solid 4px #ffffff;
+transition: border-color 0.3s;
+}
+.nav_bar a#nav_men:hover{
+    border-bottom: solid 4px #ff3f6c;
+}
+
+.nav_bar a#nav_women:hover{
+    border-bottom: solid 4px #fb56c1;
+}
+.nav_bar a#nav_kids:hover{
+    border-bottom: solid 4px #f26a10;
+}
+.nav_bar a#nav_home:hover{
+    border-bottom: solid 4px #f2c210;
+}
+.nav_bar a#nav_beauty:hover{
+    border-bottom: solid 4px #0db7af;
+}
+.nav_bar a#nav_genz:hover{
+    border-bottom: solid 4px #0db7af;
+}
+.nav_bar a#nav_studio:hover{
+    border-bottom: solid 4px #ff3f6c;
+}
+
+.nav_bar a sup {
+    color: #FF3F6C;
+    font-size: 10px;
+}
+.search_bar{
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.search_icon{
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #696e79;
+    font-weight: 100;
+    border-radius: 4px 0 0 4px;
+}
+.search_input{
+    background-color: #f5f5f6;
+    color: #696e79;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+.action_bar{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+.action_bar a{
+    text-decoration: none;
+    display: flex;
+}
+.action_name{
+    font-weight: 700;
+}
+.action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start main_section */
+.banner_container{
+    margin: 40px 0;
+}
+.discount-gif img{
+    width :100%;
+    padding: 0px 100px;
+    
+}
+.coupons-banner img{
+    width: 100%;
+    padding: 0px 100px;
+    
+}
+.percentage_off{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box {
+    flex: 1; /* Each box takes equal space */
+    min-width: 0; /* Allows flex items to shrink below their content size */
+}
+
+.box img {
+    width: 100%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+.deal-banner{
+    margin: 10px 0 30px 0;
+}
+.banner_image{
+    width: 100%;
+    padding-left:10px ;
+}
+.category_heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: 0.15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+.category_items{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:10px ;
+    padding-right:10px ;
+    justify-content: space-evenly;
+}
+.category-banner img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+
+}
+.deal-banner img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+}
+.end-banner img{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.sale_item{
+    width: 260px;
+    height: 353.16px;
+}
+.footer_container{
+    background-color:#fafbfc;
+    padding: 30px 0px 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h3{
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.footer_column a{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.copyright{
+    color: #94969f;
+    text-align: end;
+    padding: 15px;
+}
+/* Add this media query at the BOTTOM of your existing CSS */
+/* This will ONLY trigger on small screens */
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        padding: 10px 4%;
+        flex-wrap: wrap;
+    }
+    
+    .nav_bar {
+        order: 3; /* Moves nav to bottom */
+        width: 100%;
+        margin-top: 10px;
+        overflow-x: auto; /* Allows horizontal scrolling */
+        white-space: nowrap; /* Prevents line breaks */
+        padding-bottom: 5px; /* Space for scrollbar */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+    
+    .search_bar {
+        order: 1; /* Keeps search in middle */
+        margin: 10px 0;
+    }
+    
+    /* Everything else remains visually identical */
+    .nav_bar a {
+        padding: 27px 17px; /* Keep original padding */
+        border-bottom: solid 4px #ffffff; /* Keep original border */
+    }
+    
+    /* Keep all hover effects exactly the same */
+    .nav_bar a#nav_men:hover { border-bottom: solid 4px #ff3f6c; }
+    .nav_bar a#nav_women:hover { border-bottom: solid 4px #fb56c1; }
+    /* ... keep all other hover states ... */
+}
